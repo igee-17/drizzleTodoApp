@@ -8,16 +8,16 @@ import { useEffect } from "react";
 
 export default function Home() {
   const {
-    handleAddTodo,
-    fetchTodos,
     todos,
+    isLoading,
+    currentTodo,
+    isModalOpen,
+    fetchTodos,
+    handleAddTodo,
     handleEditTodo,
     handleSaveTodo,
     handleDeleteTodo,
-    isModalOpen,
-    isLoading,
     setIsModalOpen,
-    currentTodo,
   } = useTodo();
 
   useEffect(() => {
